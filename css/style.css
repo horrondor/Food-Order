@@ -1,0 +1,374 @@
+/*css for all*/
+*{
+
+font-family:Arial, Helvetica, sans-serif;
+padding: 0 0;
+margin: 0 0;
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+    padding:1%;
+    
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.img-responsive{
+   width: 100%; 
+}
+
+.img-curve{
+    border-radius:15px;
+}
+.btn{
+    padding:1%;
+    border: none;
+    border-radius: 5px;
+    font-size:1rem;
+}
+
+.btn-primary{
+    background-color: #ff6b81;
+    color:#fff;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color:#fff;
+    background-color:#ff4757;
+}
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757;
+}
+.clearfix{
+    clear:both;
+    float:none;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.float-container{
+    position:relative;
+}
+
+.float-text{
+    position:absolute;
+    bottom: 50px;
+    left:40%;
+}  
+.text-white{
+    color:#fff;
+}
+h1{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}    
+h2{
+    font-size: 1.5rem;
+}
+.fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.text-left{
+    text-align: left;
+}
+ /*css for navbar*/
+
+/* .logo{
+     width:10%; 
+     float: left; 
+} */
+/* .menu ul{
+    list-style-type: none;
+} */
+
+/* .menu ul li{
+    display: inline; 
+    padding: 1%;
+    font-weight: bold;
+} */
+
+.menu{ 
+    line-height:60px;
+}
+/* login  */
+.form-popup{
+    position:fixed;
+    top:-120%;
+    /* top:0; */
+    left:0;
+    height:100%;
+    width:100%;  
+    background:rgba(255, 255, 255, 0.835);
+    z-index:100000;
+   display:flex;
+   justify-content:center;
+ 
+ }
+ .form-popup.active{
+     top:0;
+ }
+ .form-popup form{
+     background:#fff;
+     margin-top:6rem;
+     padding:2rem;
+     width:40rem;
+     height:42rem;
+     text-align:center;
+     border:.1rem solid rgba(0, 0, 0, 0.1);
+     text-align:center;
+     border-radius:.5rem;
+     box-shadow:.111rem .1rem .1rem .0111rem rgba(0, 0, 0, 0.459);
+ }
+ .form-popup input{
+     margin:.7rem 0;
+     width:100%;
+     font-size:1.6rem;
+     color:#130f40;
+     text-transform:none;
+     border:1px solid rgba(0, 0, 0, 0.205);
+     border-radius:.5rem;
+     padding:1rem 1.2rem;
+ }
+ .form-popup form h3{
+     font-size:2.5rem;
+     padding-bottom:1rem;
+     color:#130f40;
+     text-transform:uppercase;
+ }
+ .form-popup form p{
+     padding:.1rem 0;
+     font-size:1.6rem;
+     color:var(--light-color);
+     text-transform:capitalize;
+     font-weight:550;
+ }
+ .form-popup form p a{
+     padding-left:.6rem;
+     color:#130f40;
+     text-decoration:underline; 
+ }
+ .form-popup form input[type="submit"]{
+   color:#fff;
+   background:#27ae5fec;
+   font-size:1.7rem;
+   font-weight:550;
+ }
+ .form-popup form input[type="submit"]:hover{
+     background:#289055;
+     color:#eee;
+ } 
+ 
+ .buttons{
+     display:flex;
+     gap:1rem;
+     justify-content:center;
+     margin-bottom:1rem;
+ }   
+ .buttons a{
+     padding:1rem;
+     font-size:1.6rem;
+     background:#18181828; 
+     width:100%;  
+     border-radius:.5rem;
+     background:#4267b2;
+     color:#fff;
+ }
+ .buttons .btn{
+ background-color:#DD4B39;
+ }
+ .form-popup #close-login-form{
+     position:absolute;
+     top:0;right:2rem;
+     font-size:4.5rem;
+     color:#130f40;
+     cursor:pointer;
+     font-weight:bolder;
+ }
+
+ /* signup form */
+.form-signup.active{
+    top:0;
+}
+.form-signup{
+    position:fixed;
+    top:-105%;left:0;
+    height:100%;
+    width:100%;  
+    background:rgba(255, 255, 255, 0.835);
+    z-index:100000;
+   display:flex;
+   justify-content:center;
+ 
+ }
+.form-signup form {
+    background:#fff;
+    margin-top:5rem;
+    padding:2rem;
+    width:40rem;
+    height:42rem;
+    text-align:center;
+    border:.1rem solid rgba(0, 0, 0, 0.1);
+    text-align:center;
+    border-radius:.5rem;
+    box-shadow:.111rem .1rem .1rem .0111rem rgba(0, 0, 0, 0.459);
+}
+.form-signup input{
+    margin:.7rem 0;
+    width:100%;
+    font-size:1.6rem;
+    color:#130f40;
+    text-transform:none;
+    border:1px solid rgba(0, 0, 0, 0.205);
+    border-radius:.5rem;
+    padding:1rem 1.2rem;
+}
+.form-signup form h3{
+    font-size:2.5rem;
+    padding-bottom:1rem;
+    color:#130f40;
+    text-transform:uppercase;
+}
+.form-signup form input[type="submit"]{
+    color:#fff;
+    background:#27ae5fec;
+    font-size:1.7rem;
+    font-weight:550;
+    text-transform:capitalize;
+  }
+.form-signup form input[type="submit"]:hover{
+    background:#289055;
+    color:#eee;
+}
+.form-signup #close-signup-form{
+    position:absolute;
+    top:0;right:2rem;
+    font-size:4.5rem;
+    color:#130f40;
+    cursor:pointer;
+    font-weight:bolder;
+    
+} 
+/* css for food-search section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+.food-search input[type="search"]{
+    padding:1%;
+    width:50%;
+    font-size:1rem;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* .btn{
+    color:#fff;
+    padding:1%;
+    border: none;
+    border-radius: 5px;
+} */
+
+/*css for categories*/
+
+.Categories{
+    padding:4% 0;
+   
+}
+
+.box{
+    width:28%;
+    float:left;
+    margin:2%;
+}
+
+/*css for menu section*/
+.food-Menu{
+    background-color:#ececec;
+    padding:4% 0;
+  
+}
+.food-menu-box{
+    width:43%;
+    margin:1%;
+    padding: 2%;
+    float:left;
+    background-color:#fff;
+    border-radius:15px;
+   
+}
+.food-menu-image{
+    width:20%;
+    float:left;
+}
+.food-menu-desc{
+    width:70%;
+    float:left;
+    margin-left:8%;
+}
+.food-price{
+    font-size:1.2rem;
+    margin:2% 0;
+}
+
+.food-details{
+    font-size:1rem;
+    color: #747d8c;
+}
+
+/*css for social*/
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display:inline;
+    padding: 1%;
+}
+
+
+/*css for order*/
+.order{
+    width:50%;
+    margin: 0 auto;
+}
+
+
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+margin-bottom: 1%;
+font-weight:bold;
+}

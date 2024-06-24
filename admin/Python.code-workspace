@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "E:\\practice\\Car Rental"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Car Rental"
+	}
+}
